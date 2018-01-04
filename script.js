@@ -1,55 +1,36 @@
-function plus () {
-    var num1, num2, result;
-    
+var num1, num2, result;
+
+function basicActions() {
     num1 = document.getElementById('num1').value;
     num1 = +num1;
 
     num2 = document.getElementById('num2').value;
     num2 = +num2;
+};
+function resultAnSwer() {
+    document.getElementById('anSwer').innerHTML = result;  
+};
 
+function plus () {
+    basicActions();
     result = num1 + num2;
-    document.getElementById('anSwer').innerHTML = result;
-
+    resultAnSwer();
 };
 
 function minus () {
-    var num1, num2, result;
-    
-    num1 = document.getElementById('num1').value;
-    num1 = +num1;
-
-    num2 = document.getElementById('num2').value;
-    num2 = +num2;
-
+    basicActions();
     result = num1 - num2;
-    document.getElementById('anSwer').innerHTML = result;
-
+    resultAnSwer();
 };
 
 function multiPly () {
-    var num1, num2, result;
-    
-    num1 = document.getElementById('num1').value;
-    num1 = +num1;
-
-    num2 = document.getElementById('num2').value;
-    num2 = +num2;
-
+    basicActions();
     result = num1 * num2;
-    document.getElementById('anSwer').innerHTML = result;
-
+    resultAnSwer();
 };
 
 function diviSion () {
-    var num1, num2, result;
-    
-    num1 = document.getElementById('num1').value;
-    num1 = +num1;
-
-    num2 = document.getElementById('num2').value;
-    num2 = +num2;
-
+    basicActions();
     result = num1 / num2;
-    document.getElementById('anSwer').innerHTML = result;
-
+    resultAnSwer();
 };
